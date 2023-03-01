@@ -18,7 +18,7 @@ void drawDistance(int distance) {
   u8g.setFont(u8g_font_10x20);
 //  u8g.drawStr(10, 20, "Distance:");
   u8g.drawStr(10, 20, String(distance).c_str());
-   u8g.drawStr(30, 20, "cm");
+   u8g.drawStr(50, 20, "cm");
 //  u8g.print("cm");
 }
 
