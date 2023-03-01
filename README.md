@@ -1,5 +1,5 @@
 # OLED
-# install it externally using the following link.
+# install externally library using the following link.
 
 https://github.com/adafruit/Adafruit-GFX-Library
 
