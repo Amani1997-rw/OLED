@@ -21,6 +21,7 @@ Employee
 └── SalesPerson
 └── Intern
 
+### **Inheritance Hierarchy**
 ### File structure
 employee.py: Defines the base class Employee.
 manager.py: Defines the derived class Manager.
