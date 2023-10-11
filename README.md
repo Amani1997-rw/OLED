@@ -36,16 +36,14 @@ To run the example code, follow these steps:
 
 1. Make sure you have Python installed on your system.
 
-2. Clone this repository to your local machine.
-
     ```bash
-    git clone https://github.com/your-username/employee-management-system.git
+   
     ```
 
-3. Navigate to the project directory.
+2. Navigate to the project directory.
 
     ```bash
-    cd employee-management-system
+    cd andrewid_hw1
     ```
 
 4. To execute the example code, just open the command prompt and run the below command to execute the tester.py file:
@@ -53,5 +51,30 @@ To run the example code, follow these steps:
     ```b
     python tester.py
     ```
+## Overview of the Inheritance Hierarchy:
 
+1. **Employee (employee.py):**
+   - Base class representing a regular employee.
+   - Attributes: `employee_id`, `first_name`, `last_name`, `email`, `salary`.
+   - Methods: `calculate_earnings`, `display_info`, getter and setter methods for attributes.
+
+2. **Manager (manager.py):**
+   - Derived class from `Employee`.
+   - Additional attributes: `department`, `num_direct_reports`, `management_support_allowance_rate`.
+   - Overrides `calculate_earnings` for role-specific earnings calculation.
+
+3. **Director (director.py):**
+   - Derived class from `Employee`.
+   - Additional attributes: `department`, `bonus`.
+   - Overrides `calculate_earnings` for role-specific earnings calculation.
+
+4. **SalesPerson (salesperson.py):**
+   - Derived class from `Employee`.
+   - Additional attributes: `sales_amount`, `commission_rate`.
+   - Overrides `calculate_earnings` for role-specific earnings calculation.
+
+5. **Intern (intern.py):**
+   - Derived class from `Employee`.
+   - Additional attributes: `university_name`, `program_name`, `internship_duration`.
+   - Overrides `calculate_earnings` for role-specific earnings calculation.
 
