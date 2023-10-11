@@ -79,7 +79,7 @@ To run the example code, follow these steps:
 
 - Ensure that you do not set a `management_support_allowance_rate` above 60% for managers. It will raise a `ValueError`.
 
-- Commission rate for salespersons cannot exceed 20%, raising a `ValueError` if attempted.
+- Commission rate for salespersons cannot exceed 2%, raising a `ValueError` if attempted.
 
 - For interns, the `internship_duration` should be between 3 to 6 months.
 -  In addition to the fundamental requirements, I've introduced an additional employee role to enrich the system. I've included the Salesperson class, which inherits from the 'Employee' class as its parent.
