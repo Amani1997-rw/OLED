@@ -21,14 +21,11 @@ Employee
 └── SalesPerson
 └── Intern
 
-### **Inheritance Hierarchy**
-### File structure
-employee.py: Defines the base class Employee.
-manager.py: Defines the derived class Manager.
-director.py: Defines the derived class Director.
-salesperson.py: Defines the derived class SalesPerson.
-intern.py: Defines the derived class Intern.
-tester.py: Module for example usage.
-### To execute the example code, go to the directory where a file named tester.py is located.
-###  To execute the example code, just open the command prompt and run the following command to execute the tester.py file:
+## File Structure:
+- **employee.py**: Defines the base class `Employee`.
+- **manager.py**: Defines the derived class `Manager`.
+- **director.py**: Defines the derived class `Director`.
+- **salesperson.py**: Defines the derived class `SalesPerson`.
+- **intern.py**: Defines the derived class `Intern`.
+- **tester.py**: Module for example usage.
 
