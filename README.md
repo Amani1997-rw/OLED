@@ -22,6 +22,12 @@ Employee
 └── Intern
 
 ```
-The following inheritance hierarchy is implemented in the code:
+## File Structure:
+- **employee.py**: Defines the base class `Employee`.
+- **manager.py**: Defines the derived class `Manager`.
+- **director.py**: Defines the derived class `Director`.
+- **salesperson.py**: Defines the derived class `SalesPerson`.
+- **intern.py**: Defines the derived class `Intern`.
+- **tester.py**: Module for example usage.
 
 
