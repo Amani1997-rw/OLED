@@ -21,7 +21,7 @@ Employee
 └── SalesPerson
 └── Intern
 
-### File Structure:
+### File structure
 employee.py: Defines the base class Employee.
 manager.py: Defines the derived class Manager.
 director.py: Defines the derived class Director.
