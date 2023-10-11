@@ -30,4 +30,28 @@ Employee
 - **intern.py**: Defines the derived class `Intern`.
 - **tester.py**: Module for example usage.
 
+## Running the Example Code:
+
+To run the example code, follow these steps:
+
+1. Make sure you have Python installed on your system.
+
+2. Clone this repository to your local machine.
+
+    ```bash
+    git clone https://github.com/your-username/employee-management-system.git
+    ```
+
+3. Navigate to the project directory.
+
+    ```bash
+    cd employee-management-system
+    ```
+
+4. To execute the example code, just open the command prompt and run the below command to execute the tester.py file:
+
+    ```b
+    python tester.py
+    ```
+
 
