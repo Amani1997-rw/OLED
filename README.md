@@ -22,4 +22,6 @@ Employee
 └── Intern
 
 
+The following inheritance hierarchy is implemented in the code:
+
 
