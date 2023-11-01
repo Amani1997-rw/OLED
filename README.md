@@ -1,36 +1,20 @@
 
-## Employee Inheritance Hierarchy
+## Human Resource Management Information System
 
-**Inheritance Hierarchy**
+**Implemented by Pacifique Izera Ifituburyo and Murera Amani**
 
-The following inheritance hierarchy is implemented in the code:
+The work presented herein represents Programming Assignment 2 completed for the Programming for Data Analytics course:
 
-## Employee Inheritance Hierarchy Documentation
+This documentation provides instructions on how to run our example code, a brief overview of the implemented solution and features for running our solution.
 
-This documentation provides instructions on how to run the example code, a brief overview of the implemented inheritance hierarchy, and any additional information required for evaluation. This Employee Management System is designed to handle different employee roles, including managers, directors, salespersons, and interns. The system is implemented in Python with a modular structure:
-
-
-### Inheritance Hierarchy
-
-The following inheritance hierarchy is implemented in the code:
-
-```python
-Employee
-├── Manager
-│── Director
-└── SalesPerson
-└── Intern
-
-```
 ## File Structure:
-- **employee.py**: Defines the base class `Employee`.
-- **manager.py**: Defines the derived class `Manager`.
-- **director.py**: Defines the derived class `Director`.
-- **salesperson.py**: Defines the derived class `SalesPerson`.
-- **intern.py**: Defines the derived class `Intern`.
-- **tester.py**: Module for example usage.
+- **Employee.py**: Represents an employee with roles as per ProgrammingAssignment 1. We have re-use the codes submitted in Programming
+Assignment 1.
+- **Attendance.py**: Represents attendance records for each employee, including date, in-time, and out-time.
+- **Salary.py**: Manages salary information for each employee, including the base salary and any deductions, allowances, or bonuses.
+- **HRMIS.py**: Represents the HR management system, which manages employee
 
-## Running the Example Code:
+## Running Our Example Code:
 
 To run the example code, follow these steps:
 
@@ -40,50 +24,49 @@ To run the example code, follow these steps:
 2. Navigate to the project directory.
 
     ```bash
-    cd amurera_hw1
+    cd hw2
     ```
 
-4. To execute the example code, just open the command prompt and run the below command to execute the tester.py file:
+4. To execute our code, just open the command prompt and run the below command to execute the HRMIS.py file:
 
     ```b
-    python tester.py
+    python HRMIS.py
     ```
-## Overview of the Inheritance Hierarchy:
+    ```b
+    - Enter the first name
+    - Enter the last name
+    - Enter an email address
+    - Enter position
+    - Enter salary
+    - Enter the time in
+    - Enter the time-out
+    ```
+After Entering the data the employee records, attendance data, and salary information will be stored in files
+## Overview of the implemented solution and features:
+The developed solution facilitates the HR manager to seamlessly add, update, or delete employee records, covering their personal and contact details while enforcing a validation process to ensure the uniqueness of employee IDs. It allows the HR manager to maintain attendance by capturing in-time and out-time for each working day.
+Moreover, it provides functionality to exhibit attendance logs for individual employees and the entire team. Additionally, it computes the total working hours for each employee within a defined time frame.
+Furthermore, this solution enables the generation and display of fundamental reports, such as employee lists, attendance summaries, and salary overviews for a specified month. It also incorporates a feature to persist data by saving it to files.
 
-1. **Employee (employee.py):**
-   - Base class representing a regular employee.
-   - Attributes: `employee_id`, `first_name`, `last_name`, `email`, `salary`.
-   - Methods: `calculate_earnings`, `display_info`, getter and setter methods for attributes.
+  
 
-2. **Manager (manager.py):**
-   - Derived class from `Employee`.
-   - Additional attributes: `department`, `num_direct_reports`, `management_support_allowance_rate`.
-   - Overrides `calculate_earnings` for role-specific earnings calculation.
-
-3. **Director (director.py):**
-   - Derived class from `Employee`.
-   - Additional attributes: `department`, `bonus`.
-   - Overrides `calculate_earnings` for role-specific earnings calculation.
-
-4. **SalesPerson (salesperson.py):**
-   - Derived class from `Employee`.
-   - Additional attributes: `sales_amount`, `commission_rate`.
-   - Overrides `calculate_earnings` for role-specific earnings calculation.
-
-5. **Intern (intern.py):**
-   - Derived class from `Employee`.
-   - Additional attributes: `university_name`, `program_name`, `internship_duration`.
-   - Overrides `calculate_earnings` for role-specific earnings calculation.
      
-## Important Notes:
+## Run the unit tests:
 
-- Ensure that you do not set a `management_support_allowance_rate` above 60% for managers. It will raise a `ValueError`.
+- To run the unit tests, navigate to the project directory and execute the following command in your terminal:
+```b
+python -m unittest test.py
+```
+ ```b
+    - Enter the first name
+    - Enter the last name
+    - Enter an email address
+    - Enter position
+    - Enter salary
+    - Enter the time in
+    - Enter the time-out
+ ```
+If all of the tests pass, you will see ok as output in your terminal:
 
-- Commission rate for salespersons cannot exceed 2%, raising a `ValueError` if attempted.
 
-- For interns, the `internship_duration` should be between 3 to 6 months.
--  In addition to the fundamental requirements, I've introduced an additional employee role to enrich the system. I've included the Salesperson class, which inherits from the 'Employee' class as its parent.
-- The Salesperson class is a specific type of employee that represents individuals involved in sales activities. It inherits from the Employee class, which serves as a base class for all employees. The Salesperson class has additional attributes specific to sales, including the commission rate and sales amount. The commission_rate represents the percentage of commission earned on each sale made by the salesperson, while the sales_amount represents the total sales achieved by the salesperson. Therefore, the total earning of a sales person is given by salary + commission_rate * sales amount. This class takes into account the sales performance of the salesperson and calculates their overall earnings.
 
-This system provides a flexible and extensible framework for managing various employee roles with role-specific earnings calculations.
 
